@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MinicRPC</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="content_description">show a imageview</string>
+    
+    
+    <string name="rb_birthday">生日</string>
+    <string name="rb_sms_bless">短信祝福</string>
+    <string name="rb_myself">个人中心</string>
+    <string name="rb_more">更多</string>
+    
+    <string name="f_birthdary_edit">编辑</string>
+    <string name="f_birthdary_finish">完成</string>
+    
+    <string name="baseactivity_quit_hint">再按一次退出</string>
+    
+    <string name="birthday_format">M月d日</string>
+    <string name="birthday_delete">删除</string>
+    
+    <string name="birthday_time_hint_man">离他的生日</string>
+    <string name="birthday_time_hint_feman">离她的生日</string>
+    <string name="birthday_time_hint_hit">今天生日</string>
+    
+    <string name="luckydog_title">添加生日</string>
+    <string name="luckydog_name">姓名</string>
+    <string name="luckydog_name_hint">请输入姓名</string>
+    <string name="luckydog_sex">性别</string>
+    <string name="luckydog_birthday">生日</string>
+    <string name="luckydog_birthday_hint">点击设置生日</string>
+    <string name="luckydog_tel">手机</string>
+    <string name="luckydog_tel_hint">用于发送短信</string>
+    <string name="luckydog_note">备注</string>
+    <string name="luckydog_note_hint">如预定餐厅、购买礼物</string>
+    <string name="luckydog__alert_hint">请先设置生日</string>
+    <string name="luckydog_alert_time">生日当天/提前一天/提前三天/提前七天/</string>
+    <string name="luckydog_save">保存</string>
+    <string name="luckydog_portrait_edit_hint">点击修改头像</string>
+    <string name="man">男</string>
+    <string name="feman">女</string>
+    <string name="he">他</string>
+    <string name="she">她</string>
+    <string name="luckydog_dialog_editportrait_photo">拍照</string>
+    <string name="luckydog_dialog_editportrait_gralley">相册</string>
+    <string name="luckydog_dialog_editportrait_recommand">推荐</string>
+    <string name="luckydog_edt_name_err">该值不能空</string>
+    <string name="luckydog_edt_birthday_err">格式请写xxxx-xx-xx</string>
+    <string name="luckydog_edt_tel_err">电话格式不正确</string>
+    
+    <string name="birthday_info_birth_hint">距离%1$s%2$d岁生日还有</string>
+    <string name="birthday_info_birth_leave_hint">%1$d天</string>
+    <string name="birthday_info_next_birthday_date">yyyy年M月d日</string>
+    <string name="birthday_info_rb_todaylucky">今日运势</string>
+    <string name="birthday_info_rb_smsbless">短信祝福</string>
+    <string name="birthday_info_rb_telbess">电话祝福</string>
+    <string name="birthday_info_load_err">载入信息错误</string>
+    
+    <string name="smsbless_title">短信祝福</string>
+    <string name="smsbless_contact">联系人</string>
+    <string name="smsbless_happybirthday">生日快乐~~</string>
+    <string name="smsbless_happybirthday_hint">输入生日祝福</string>
+    <string name="smsbless_best_bless_msg">精选短信祝福</string>
+    <string name="smsbless_favorites">收藏夹</string>
+    <string name="smsbless_ontime_auto_send_flag">定时发送短信：</string>
+    <string name="smsbless_send_date">发送日期：</string>
+    <string name="smsbless_send_date_content">%1$s（生日当天）</string>
+    <string name="smsbless_send_time">发送时间：</string>
+    <string name="smsbless_send_time_save">保存定时短信</string>
+    <string name="smsbless_send_sms_hint">短信发送中...</string>
+    <string name="send">发送</string>
+    <string name="dateformat">yyyy-M-d</string>
+    
+    <string name="fragment_sms_title">短信祝福</string>
+    
+    <string name="sms_info_message">短信</string>
+    
+    <string name="mycenter_title">个人中心</string>
+    <string name="mycenter_edit">修改信息</string>
+    <string name="mycenter_login">登录</string>
+    <string name="mycenter_login_hint">登录后才能备份</string>
+    <string name="mycenter_login_name">登录名：</string>
+    <string name="mycenter_birth">生&#160;&#160;&#160;日：</string>
+    <string name="mycenter_birth_hint">0月0日</string>
+    <string name="mycenter_tel">手&#160;&#160;&#160;机：</string>
+    <string name="mycenter_tel_hint">立即绑定</string>
+    <string name="mycenter_rb_mybirthday">我的生日</string>
+    <string name="mycenter_rb_backup">备份中心</string>
+    <string name="mycenter_rb_today_lucky">今日运势</string>
+    
+    <string name="me">我</string>    
+    
+    <string name="more_title">更多</string>
+    <string name="more_base_setting">基本设置</string>
+    <string name="more_function_setting">功能设置</string>
+    <string name="more_system_setting">系统设置</string>
+    
+    
+    <string name="notification_title">生日管家</string>
+    <string name="notification_text">记录您关心的每一个人</string>
+    
+    
+    
+    
+</resources>

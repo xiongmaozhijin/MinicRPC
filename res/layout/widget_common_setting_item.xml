@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5.0dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:clickable="true"
+    android:background="@drawable/more_item_selector"  >
+
+    <ImageView
+        android:id="@+id/first_hint_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/account"
+        android:contentDescription="@string/content_description" />
+
+    <TextView
+        android:id="@+id/subsetting_name"
+        android:gravity="center_vertical|left"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:text="提醒设置"
+        android:textColor="#ff78736d" />
+
+    <TextView
+        android:id="@+id/hint_string"
+       	android:gravity="center_vertical|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3.0dip"
+        android:text="提醒时间、铃声设置"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="11.0sp" />
+
+    <ToggleButton
+        android:id="@+id/toggle_btn"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/slide_btn_selector"
+        android:textOff="@null"
+        android:textOn="@null" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/about_arrow"
+        android:contentDescription="@string/content_description" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg" >
+    
+    
+	<!-- titlebar -->
+    <com.example.minicrpc.widget.CommonTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:has_left_button="true"
+        app:has_right_button="true"
+        app:left_button_background="@drawable/back_arrow_selector"
+        app:left_button_text=""
+        app:right_button_text=""
+        app:right_button_background="@drawable/edit_selector"
+        app:title="生日" />
+    <!-- 第一部分s -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d2"
+        android:paddingTop="@dimen/d2"  >
+        
+        <ImageView 
+            android:contentDescription="@string/content_description"
+            android:id="@+id/portrait"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/defaultboy"
+            android:scaleType="fitXY"  />
+        
+        <ImageView 
+            android:contentDescription="@string/content_description"
+            android:id="@+id/splitline1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/soildline"
+            android:layout_alignTop="@id/portrait"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/portrait"  />
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_below="@id/splitline1"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="姓名"  />         
+        
+        <ImageView 
+            android:contentDescription="@string/content_description"
+            android:id="@+id/redstat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/vipstar"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/name"
+            android:layout_alignTop="@id/name" />
+        
+        <ImageButton 
+            android:contentDescription="@string/content_description"
+            android:id="@+id/birthday_wiki"
+            android:layout_width="40dp"
+            android:layout_height="110dp"
+            android:background="@drawable/birthday_info_wiki_selector"
+            android:scaleType="fitXY"
+            android:layout_below="@id/splitline1"
+            android:layout_alignParentRight="true"  />
+        
+        
+        <TextView 
+            android:id="@+id/birthday_date"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1960-1-12"
+            android:layout_alignLeft="@id/portrait"
+            android:layout_below="@id/portrait"
+            android:layout_marginTop="10dp" />
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:contentDescription="@string/content_description"
+        android:id="@+id/splitline2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dashline"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+    
+    <!-- 第二部分 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d2"
+        android:paddingTop="@dimen/d2" >
+        
+        <TextView 
+            android:id="@+id/birthday_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_info_birth_hint"
+            android:textColor="@android:color/darker_gray" />
+        
+        <TextView 
+            android:id="@+id/birth_leave_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_info_birth_leave_hint"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_alignLeft="@id/birthday_hint"
+            android:layout_below="@id/birthday_hint"
+            android:layout_marginTop="5dp"
+            style="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"  />
+        
+          <TextView 
+            android:id="@+id/next_birthday_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_info_next_birthday_date"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/birth_leave_hint"
+            android:layout_alignLeft="@id/birth_leave_hint"
+            android:layout_marginTop="4dp" />
+        
+          <TextView 
+              android:id="@+id/solor_hint"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="公历"
+              android:layout_alignBottom="@id/birth_leave_hint"
+              style="?android:attr/textAppearanceMedium"
+              android:layout_alignParentRight="true" 
+              android:layout_marginRight="15dp"
+              android:background="@drawable/birth_info_txv_bg1"  />
+          
+    </RelativeLayout>
+    
+     <ImageView 
+        android:contentDescription="@string/content_description"
+        android:id="@+id/splitline3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dashline"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+     
+     <View 
+         android:id="@+id/splitbg1"
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:background="@drawable/bgedge"/>
+     
+    
+    <!-- 点击添加备注 -->
+    
+    <!-- 底部三个radiobutton -->
+          
+          
+          
+          <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+
+            <RadioButton
+                android:id="@+id/today_lucky"
+                style="@style/BirthInfoRBStyle"
+                android:text="@string/birthday_info_rb_todaylucky"
+                android:drawableTop="@drawable/birthday_info_rb_lucky_selector" />
+
+            <RadioButton
+                android:id="@+id/sms_bless"
+                style="@style/BirthInfoRBStyle"
+                android:text="@string/birthday_info_rb_smsbless"
+                android:drawableTop="@drawable/birthday_info_rb_sms_selector" />
+
+            <RadioButton
+                android:id="@+id/tel_bless"
+                style="@style/BirthInfoRBStyle"
+                android:text="@string/birthday_info_rb_telbess"
+                android:drawableTop="@drawable/birthday_info_rb_tel_selector" />
+        </RadioGroup>
+
+    
+    
+    
+    
+    
+
+</LinearLayout>

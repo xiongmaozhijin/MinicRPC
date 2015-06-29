@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"  >
+
+    <com.example.minicrpc.widget.CommonTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:has_left_button="false"
+        app:has_right_button="false"
+        app:title="@string/mycenter_title" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mycenter_bg_1"
+        android:paddingBottom="30dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="@dimen/d2" >
+        
+        <ImageView 
+            android:contentDescription="@string/content_description"
+            android:id="@+id/portrait"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mask_large"
+            android:scaleType="fitXY"  />
+        
+        <View 
+            android:id="@+id/split1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/soildline_gray" 
+            android:layout_alignTop="@id/portrait"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_marginTop="20dp"  />
+        
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_below="@id/split1"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_marginLeft="5dp" 
+            android:layout_marginTop="7dp" />
+        
+        <TextView 
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EECFA1"
+            android:background="@drawable/mycenter_btn_bg_selctor"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/name" 
+            android:text="@string/mycenter_edit"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+           android:clickable="true" />
+        
+         <TextView 
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EECFA1"
+            android:background="@drawable/mycenter_btn_bg_selctor"
+            android:layout_alignBaseline="@id/name" 
+            android:text="@string/mycenter_login"
+			android:layout_toLeftOf="@id/edit"
+            android:textSize="12sp"
+            android:layout_marginRight="5dp"
+            android:clickable="true" />
+        
+        
+         <ImageButton
+             android:contentDescription="@string/content_description"
+             android:id="@+id/phone"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:scaleType="fitXY"
+             android:background="@drawable/mobile"
+             android:layout_toLeftOf="@id/login"
+             android:layout_alignBottom="@id/name"
+             android:layout_marginRight="5dp" />
+         
+         <LinearLayout 
+             android:id="@+id/ll_login_info"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_alignLeft="@id/name"
+             android:layout_below="@id/name"
+             android:layout_marginTop="50dp" >
+             
+         	<LinearLayout 
+         	    android:layout_width="match_parent"
+         	    android:layout_height="wrap_content"
+         	    android:orientation="horizontal"
+         	    android:showDividers="end" >
+         	    <TextView 
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_login_name" />
+         	    <TextView 
+         	        android:id="@+id/login_hint"
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_login_hint"
+         	        android:textColor="#EECFA1" />
+         	</LinearLayout>
+         	
+         	
+         	<LinearLayout 
+         	    android:layout_width="match_parent"
+         	    android:layout_height="wrap_content"
+         	    android:orientation="horizontal" >
+         	    <TextView 
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_birth" />
+         	    <TextView 
+         	        android:id="@+id/birth_hint"
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_birth_hint"
+         	        android:textColor="#EECFA1" />
+         	</LinearLayout>
+         	
+         	<LinearLayout 
+         	    android:layout_width="match_parent"
+         	    android:layout_height="wrap_content"
+         	    android:orientation="horizontal" >
+         	    <TextView 
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_tel" />
+         	    <TextView 
+         	        android:id="@+id/tel_hint"
+         	        android:layout_width="wrap_content"
+         	        android:layout_height="wrap_content"
+         	        android:text="@string/mycenter_tel_hint"
+         	        android:textColor="#EECFA1"
+         	        android:background="@drawable/mycenter_btn_bg_selctor"
+         	       android:clickable="true" />
+         	</LinearLayout>
+         	
+             
+         </LinearLayout>
+         
+         <ImageView
+             android:contentDescription="@string/content_description" 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/letter"
+             android:layout_below="@id/ll_login_info"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="9dp"
+             android:layout_marginTop="10dp" />
+         
+         
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        
+        <RadioButton 
+            android:id="@+id/rb_mybirthday"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/mycenter_rb_mybirthday_selector"
+            android:text="@string/mycenter_rb_mybirthday"
+            android:button="@null"
+            android:textColor="#F4A460"
+            android:layout_marginRight="15dp" />
+        
+        <FrameLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	          <RadioButton 
+	            android:id="@+id/rb_backup"
+	            android:gravity="center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:drawableTop="@drawable/mycenter_rb_backup_selector"
+	            android:text="@string/mycenter_rb_backup"
+	            android:button="@null"
+	            android:textColor="#F4A460"/>
+	          
+	          <TextView 
+	              android:id="@+id/rb_backup_hint"
+	              android:gravity="center"
+	              android:layout_gravity="right|top"
+	              android:layout_marginRight="5dp"
+	              android:layout_width="20dp"
+	              android:layout_height="20dp"
+	              android:background="@drawable/mycenter_rb_backup_hint_bg"
+	              android:textColor="@android:color/white"
+	              android:text="12" />
+	          
+          </FrameLayout>
+          
+         <RadioButton 
+            android:id="@+id/rb_todaylucky"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/mycenter_rb_today_lucky_selector"
+            android:text="@string/mycenter_rb_today_lucky"
+            android:button="@null"
+            android:textColor="#F4A460"
+            android:layout_marginLeft="15dp" />
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+
+</LinearLayout>

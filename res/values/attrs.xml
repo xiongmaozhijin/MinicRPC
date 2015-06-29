@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CommonTitleBar">
+        <attr name="has_left_button" format="boolean" />
+        <attr name="left_button_text" format="string" />
+        <attr name="left_button_background" format="reference|color" />
+        <attr name="has_right_button" format="boolean" />
+        <attr name="right_button_text" format="string" />
+        <attr name="right_button_background" format="reference|color" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="CommonSetting">
+        <!-- 设置类别 -->
+        <attr name="setting_title" format="string" />
+        <!-- 设置项图标引用文件名 -->
+        <attr name="first_hint_icons_arrays" format="reference" />
+        <!-- 设置项文本内容 -->
+        <attr name="subsettings_names_arrays" format="reference" />
+        <!-- 提示项 类型，0表示文本提示，1表示开关操作 -->
+        <attr name="hint_type_arrays" format="reference" />
+        <!-- 提示项内容，如果是文本类型提示，则指定的是文本内容  --> 
+        <attr name="hint_string_arrays" format="reference" /> 
+    </declare-styleable>
+    
+    
+</resources>

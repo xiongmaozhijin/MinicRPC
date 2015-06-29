@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup 
+        android:id="@+id/dialog_rg"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/main_bg"  >
+        
+        <RadioButton 
+            android:id="@+id/dialog_rb_from_photo"
+            style="@style/CustomDialogRuttonStyle"
+            android:text="@string/luckydog_dialog_editportrait_photo"
+            android:drawableTop="@drawable/luckydog_dialog_photo_selector"  />
+        
+         <RadioButton 
+            android:id="@+id/dialog_rb_from_gralley"
+            style="@style/CustomDialogRuttonStyle"
+            android:text="@string/luckydog_dialog_editportrait_gralley"
+            android:drawableTop="@drawable/luckydog_dialog_gralley_selector"  />
+         
+          <RadioButton 
+            android:id="@+id/dialog_rb_from_recommand"
+            style="@style/CustomDialogRuttonStyle"
+            android:text="@string/luckydog_dialog_editportrait_recommand"
+            android:drawableTop="@drawable/luckydog_dialog_recommand_selector"  />
+        
+    </RadioGroup>
+    
+
+</LinearLayout>

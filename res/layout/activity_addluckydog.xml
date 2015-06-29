@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.minicrpc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- titlebar -->
+
+        <com.example.minicrpc.widget.CommonTitleBar
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:has_left_button="true"
+            app:has_right_button="false"
+            app:left_button_background="@drawable/back_arrow_selector"
+            app:left_button_text=""
+            app:title="@string/luckydog_title" />
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="15dp" >
+
+            <ImageButton
+                android:contentDescription="@string/content_description"
+                android:id="@+id/portrait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@drawable/defaultboy" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/portrait_edit_hint"
+                android:gravity="center"
+                style="?android:attr/textAppearanceMedium"
+                android:background="#50000000"
+                android:text="@string/luckydog_portrait_edit_hint"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true" 
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+            
+            
+        </RelativeLayout>
+        
+        <!-- 信息输入表单 -->
+        <LinearLayout 
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/d1" >
+
+                <TextView
+                    android:id="@+id/name_txv"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luckydog_name"
+                    android:textColor="@android:color/holo_orange_dark" />
+                
+                <ImageView 
+                    android:contentDescription="@string/content_description"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+                
+                <EditText 
+                    android:id="@+id/name_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/luckydog_name_hint"
+                    android:background="@null"  />
+                
+                <Button 
+                    android:id="@+id/name_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/luckydog_name_action_selector" />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/d1" >
+
+                <TextView
+                    android:id="@+id/sex_txv"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luckydog_sex"
+                    android:textColor="@android:color/holo_orange_dark" />
+                
+                <ImageView 
+                    android:contentDescription="@string/content_description"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+                
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" 
+                    android:id="@+id/rg_sex_group"
+                    android:orientation="horizontal"
+                    android:checkedButton="@+id/man">
+                    
+                    <RadioButton 
+                        android:id="@+id/man"
+                        android:button="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/man"
+                        android:drawableLeft="@drawable/luckydog_sex_action_selector"/>
+                    
+                    <RadioButton 
+                        android:id="@+id/feman"
+                        android:button="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feman"
+                        android:drawableLeft="@drawable/luckydog_sex_action_selector"/>
+                    
+                </RadioGroup>
+                
+                               
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/d1" >
+
+                <TextView
+                    android:id="@+id/birthday_txv"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luckydog_birthday"
+                    android:textColor="@android:color/holo_orange_dark" />
+                
+                <ImageView 
+                    android:contentDescription="@string/content_description"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+                
+                <EditText
+                    android:id="@+id/birthday_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/luckydog_birthday_hint"
+                    android:inputType="date" />
+                
+                <Button
+                    android:id="@+id/birthday_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/luckydog_birthady_action_selector"
+                    />
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/d1" >
+
+                <TextView
+                    android:id="@+id/tel_txv"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luckydog_tel"
+                    android:textColor="@android:color/holo_orange_dark" />
+                
+                <ImageView 
+                    android:contentDescription="@string/content_description"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+                
+                <EditText
+                    android:id="@+id/tel_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/luckydog_tel_hint"
+                    android:inputType="phone" />
+                
+                <Button 
+                    android:id="@+id/tel_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/luckydog_name_action_selector" />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffffffff"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingRight="6dp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/d1" >
+
+                <TextView
+                    android:id="@+id/note_txt"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luckydog_note"
+                    android:textColor="@android:color/holo_orange_dark" />
+                
+                <ImageView 
+                    android:contentDescription="@string/content_description"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+                
+                <EditText
+                    android:id="@+id/note_edt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/luckydog_note_hint" />
+                
+                                
+            </LinearLayout>
+            
+            <Button 
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/luckydog_save"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/luckydog_save_action_selector"
+                android:layout_marginTop="20dp" />
+            
+            
+            
+            
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+
+</ScrollView>

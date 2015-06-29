@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/sms_item" >
+    
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="金佛忘记佛网金佛我发觉我" 
+        android:layout_marginBottom="6dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom" >
+        
+        <ToggleButton 
+            android:id="@+id/tg"
+            android:textOn="@null"
+            android:textOff="@null"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sms_favoraties_selector"
+            android:focusable="false" />
+        
+        <TextView 
+            android:id="@+id/hots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="人气：234"
+            android:layout_weight="1"
+            android:gravity="right"  />
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

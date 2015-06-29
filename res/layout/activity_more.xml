@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.minicrpc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.minicrpc.widget.CommonTitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:has_left_button="false"
+        app:has_right_button="false"
+        app:title="@string/more_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.example.minicrpc.widget.CommonSetting
+                android:id="@+id/base_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:first_hint_icons_arrays="@array/hint_icon_filename1"
+                app:hint_string_arrays="@array/hint_content1"
+                app:hint_type_arrays="@array/setting_type1"
+                app:setting_title="@string/more_base_setting"
+                app:subsettings_names_arrays="@array/subtitle_name1" />
+
+            <com.example.minicrpc.widget.CommonSetting
+                android:id="@+id/function_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:first_hint_icons_arrays="@array/hint_icon_filename2"
+                app:hint_string_arrays="@array/hint_content2"
+                app:hint_type_arrays="@array/setting_type2"
+                app:setting_title="@string/more_function_setting"
+                app:subsettings_names_arrays="@array/subtitle_name2" />
+
+            <com.example.minicrpc.widget.CommonSetting
+                android:id="@+id/system_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:first_hint_icons_arrays="@array/hint_icon_filename3"
+                app:hint_string_arrays="@array/hint_content3"
+                app:hint_type_arrays="@array/setting_type3"
+                app:setting_title="@string/more_system_setting"
+                app:subsettings_names_arrays="@array/subtitle_name3" />
+        </LinearLayout>
+        
+        
+    </ScrollView>
+
+</LinearLayout>

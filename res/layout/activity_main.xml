@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- container -->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <!-- bottom tabs -->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_birthday" >
+
+        <RadioButton
+            android:id="@+id/rb_birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/rb_birth_selector"
+            android:text="@string/rb_birthday" />
+
+        <RadioButton
+            android:id="@+id/rb_sms_bless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/rb_sms_bless_selector"
+            android:text="@string/rb_sms_bless"/>
+
+        <RadioButton
+            android:id="@+id/rb_myself"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/rb_myself_selector"
+            android:text="@string/rb_myself"/>
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/rb_more_selector"
+            android:text="@string/rb_more" />
+    </RadioGroup>
+
+</LinearLayout>

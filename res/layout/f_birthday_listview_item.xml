@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/f_birthday_list_item_bg"
+    android:gravity="center_vertical"
+    android:paddingLeft="9dp"
+    android:paddingRight="5dp"
+    android:descendantFocusability="afterDescendants" >
+    
+    
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/defaultboy"
+        android:scaleType="fitXY" />
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_marginBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="姓名"
+        android:layout_toRightOf="@id/photo"/>
+    
+    <ImageView 
+        android:id="@+id/solor_icon"
+        android:contentDescription="@string/content_description"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/solar_icon" 
+        android:layout_toRightOf="@id/photo" 
+        android:layout_below="@id/name" />
+    
+    <TextView 
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9月10日"
+        android:textColor="@android:color/background_dark"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_toRightOf="@id/solor_icon"
+        android:layout_below="@id/name"
+        android:layout_alignBottom="@id/solor_icon"
+        android:gravity="center" />
+    
+    <TextView 
+        android:id="@+id/time_hint"
+        android:text="离她的农历生日"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/name"/>
+    
+    
+    <TextView 
+        android:id="@+id/days"
+        android:text="100"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/time_hint"
+        android:layout_alignLeft="@id/time_hint" />
+    
+    
+    <TextView 
+        android:id="@+id/days_char"
+        android:text="天"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_toRightOf="@id/days"
+        android:layout_below="@id/days"/>
+    
+    
+    <ImageView 
+        android:id="@+id/birthday_show_icon"
+        android:contentDescription="@string/content_description"
+        android:layout_marginLeft="20dp"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cake"
+        android:layout_alignLeft="@id/time_hint"
+        android:layout_below="@id/time_hint"
+        android:visibility="invisible"/>
+    
+    <Button 
+        android:id="@+id/delete"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@id/photo"
+        android:layout_alignBottom="@id/photo"
+        android:text="@string/birthday_delete"
+        android:textColor="#f0ffffff"
+        android:background="@drawable/f_listview_item_del_btn_bg"
+        android:visibility="invisible"/>
+    
+    
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
